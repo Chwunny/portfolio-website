@@ -43,11 +43,12 @@
     background: linear-gradient(179.86deg, rgba(1, 0, 7, 0.74) 10.01%, rgba(0, 48, 219, 0.84) 99.89%);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    /* justify-content: center;, */
     align-items: center;
 }
 
 .content-box1 {
+    margin-top: 10vh;
     height: 50vh;
     width: 50vw;
     display: grid;
@@ -87,6 +88,7 @@
 }
 
 .content-box2 {
+    margin-top: 10vh;
     height: 50vh;
     width: 70vw;
     display: flex;
@@ -115,6 +117,7 @@
 }
 
 .content-box3 {
+    margin-top: 10vh;
     height: 50vh;
     width: 70vw;
     display: flex;
@@ -158,4 +161,114 @@
 .project-title {
     margin-top: 2vh;
     font-size: 1.2vw;
+}
+
+
+
+
+
+
+@media (max-width: 767px) {
+    .greeting h1 {
+        font-size: 8vw;
+    }
+
+    .logo {
+        font-size: 8vw;
+    }
+
+    .navLogo {
+        font-size: 8vw;
+    }
+
+    .main-content {
+        height: 190vh;
+    }
+
+    .content-box1 {
+        width: 80vw;
+        height: auto;
+    }
+
+    #about-title {
+        font-size: 6vw;
+    }
+    
+    .about-text {
+        font-size: 3vw;
+    }
+
+
+
+
+    .content-box2 {
+        height: auto;
+        width: 80vw;
+    }
+    
+    .skills-title {
+        font-size: 6vw;
+        margin-top: 0vh;
+    }
+
+    .skills-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        place-items: center;
+        height: 50vh;
+        margin-top: 2vh;
+    }
+    
+    .skill-icon {
+        font-size: 12vw;
+    }
+
+
+
+
+    .content-box3 {
+        height: 40vh;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .projects-container {
+        height: auto;
+        width: 80vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .projects-title {
+        font-size: 6vw;
+        color: white;
+        margin-bottom: 6vh;
+    }
+    
+    .project-link {
+        margin-top: 2vh;
+        width: 80%;
+        height: auto;
+    }
+    
+    .project-link:hover {
+        transform: scale(1.05);
+    }
+    
+    .project-image {
+        max-width: 100%;
+        max-height: 80%;
+        border-radius: 10px;
+    }
+    
+    .project-title {
+        margin-top: 2vh;
+        font-size: 5vw;
+        margin-bottom: 5vh;
+    }
 }
