@@ -28,10 +28,134 @@
     color: white;
     align-self: flex-start;
     margin-left: 2vw;
+    cursor: pointer;
 }
 
 .navLogo {
     font-size: 3vw;
     color: white;
     margin-right: 3vw;
+}
+
+.main-content {
+    width: 100vw;
+    height: 200vh;
+    background: linear-gradient(179.86deg, rgba(1, 0, 7, 0.74) 10.01%, rgba(0, 48, 219, 0.84) 99.89%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-box1 {
+    height: 50vh;
+    width: 50vw;
+    display: grid;
+    grid-template: 
+        'photo text text' 100%
+        'photo text text' 100%
+        'photo text text' 100%;
+}
+
+.text-container {
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#photo {
+    grid-area: 'photo';
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#about-title {
+    font-size: 2vw;
+    margin-right: 12vw;
+    margin-bottom: 4vh;
+    color: white;
+}
+
+.about-text {
+    font-size: 1.5vw;
+    margin-left: 2vw;
+    color: white;
+    margin-bottom: 10vh;
+}
+
+.content-box2 {
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.skills-title {
+    font-size: 2vw;
+    margin-top: 5vh;
+    color: white;
+}
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: auto;
+    place-items: center;
+    height: 60%;
+    width: 80%;
+    margin-top: 2vh;
+}
+
+.skill-icon {
+    font-size: 5vw;
+    color: white;
+}
+
+.content-box3 {
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.projects-container {
+    height: 40vh;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.projects-title {
+    font-size: 2vw;
+    color: white;
+}
+
+.project-link {
+    margin-top: 10vh;
+    width: 40%;
+    height: 80%;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.project-link:hover {
+    transform: scale(1.05);
+}
+
+.project-image {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 10px;
+}
+
+.project-title {
+    margin-top: 2vh;
+    font-size: 1.2vw;
 }
